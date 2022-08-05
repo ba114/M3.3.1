@@ -93,7 +93,7 @@ v0.0.1
 <!--AlphaN-->   
   	#BA114
     <table type="3D" name="Calculated Load" category="AlphaN" storagetype="uint8" endian="little" sizex="7" sizey="6" userlevel="1">
-		<scaling name="Load" units="ms" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="2" coarseincrement="10"/>
+		<scaling units="ms" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="2" coarseincrement="10"/>
 			<table type="X Axis" name="TPS" storagetype="uint8" endian="little">
 				<scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.0" fineincrement="1" coarseincrement="10"/>
 			</table>
@@ -376,7 +376,7 @@ v0.0.1
 	</table>
 	
 	<table type="2D" name="ECT Sensor Scaling" category="Sensors Scaling" storagetype="uint8" endian="little" sizex="15" userlevel="1">
-		<scaling name="Metric" units="°C" expression="x*.75-48" to_byte="(x+48)/.75" format="0.00" fineincrement="2" coarseincrement="10"/>
+		<scaling units="°C" expression="x*.75-48" to_byte="(x+48)/.75" format="0.00" fineincrement="2" coarseincrement="10"/>
 			<table type="Y Axis" name="Voltage" storagetype="uint8" endian="little">
 				<scaling units="Volts" expression="x*0.019608" to_byte="x/0.019608" format="0.00" fineincrement=".01" coarseincrement=".1"/>
 			</table>
@@ -384,7 +384,7 @@ v0.0.1
     </table>
 	
 	<table type="2D" name="Maximum MAF" category="Sensors Scaling" storagetype="uint16" endian="little" sizex="1" userlevel="1">
-		<scaling name="Metric" units="kg/h" expression="x*.25" to_byte="x/0.25" format="0.00" fineincrement="2" coarseincrement="10"/>
+		<scaling units="kg/h" expression="x*.25" to_byte="x/0.25" format="0.00" fineincrement="2" coarseincrement="10"/>
 			<table type="Static Y Axis" name="kg/h" sizey="1">
 				<data>Maximum MAF</data>
 			</table>
