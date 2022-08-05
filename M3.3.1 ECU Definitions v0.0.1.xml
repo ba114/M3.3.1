@@ -390,10 +390,7 @@ v0.0.1
 			</table>
 		<description>Maximum MAF value</description>
     </table>
-	
-
-<!--Torque-->
-	
+		
  
 <!--Knock--> 
 		<table type="3D" name="Knock Detection Threshold - Multiplicative Factor - Cylinder 1" category="Knock" storagetype="uint8" endian="little" sizex="2" sizey="16" userlevel="3">
