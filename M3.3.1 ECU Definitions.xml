@@ -173,6 +173,16 @@ v0.0.1
 			</table>
 		<description>This is a modifier to the fuel scalar based on Intake Air Temp. Increase the value to make richer, decrease to make leaner.</description>
 	</table>
+	
+
+<!--Deceleration-->	
+	<table type="2D" name="Fuel Restore - RPM" category="Deceleration" storagetype="uint8" endian="little"  userlevel="1" sizey="4" >
+		<scaling units="RPM" expression="x*40" to_byte="x/40" format="0" fineincrement="40" coarseincrement="120" />
+		<table type="Y Axis" name="Coolant Temperature" storagetype="uint8" endian="little" logparam="P2" >
+			<scaling units="&deg;C" expression="x*.75-48" to_byte="(x+48)/.75" format="0.00" fineincrement="1" coarseincrement="10" />
+		</table>
+		<description>ID_N_MIN_PUC__TCO - Below this Engine Speed, fuel injectors are always turned on. To disable fuel cut during deceleration with the Throttle closed, increase this table as high as you want.</description>
+	</table>
 
 <!--Timing-->
 
@@ -525,6 +535,12 @@ v0.0.1
 		<table type="Y Axis" storageaddress="0xD7D6" dataLayout="bosch_subtract"/>
 	</table>
 	
+
+<!--Deceleration-->
+	<table name="Fuel Restore - RPM" storageaddress="DC79">
+		<table type="X Axis" storageaddress="0xDC75" dataLayout="bosch_subtract"/>
+	</table>
+
 	
 <!--Ignition-->	
 
