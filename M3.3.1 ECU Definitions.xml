@@ -282,9 +282,9 @@ v0.0.1
 		<scaling units="TPS" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement=".1" coarseincrement="1"/>
 			<table type="Static Y Axis" name="RPM" sizey="4">
 				<data>800</data>
-				<data>2080</data>
-				<data>3360</data>
-				<data>4640</data>
+				<data>1120</data>
+				<data>1440</data>
+				<data>1760</data>
 			</table>	
 		<description>When this throttle is below this threshold the idle fuel and timing tables will be used.</description>
    </table>
