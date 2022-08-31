@@ -320,6 +320,22 @@ v0.0.1
 		<description>Rev Limiter</description>
 	</table>
 	
+	<table type="2D" name="RPM limiter - Hysteresis A" category="Limiters" storagetype="uint16" endian="little" sizey="1" userlevel="1">
+		<scaling units="RPM" expression="x*0.25" to_byte="x/0.25"  format="0" fineincrement="50" coarseincrement="100" />
+			<table type="Static Y Axis" name="RPM" sizey="1">
+				<data>RPM Limit</data>
+			</table>
+		<description>Reduce hysteresis for a more aggressive Rev Limiter.</description>
+	</table>
+	
+	<table type="2D" name="RPM limiter - Hysteresis B" category="Limiters" storagetype="uint16" endian="little" sizey="1" userlevel="1">
+		<scaling units="RPM" expression="x*0.25" to_byte="x/0.25"  format="0" fineincrement="50" coarseincrement="100" />
+			<table type="Static Y Axis" name="RPM" sizey="1">
+				<data>RPM Limit</data>
+			</table>
+		<description>Reduce hysteresis for a more aggressive Rev Limiter.</description>
+	</table>
+	
 	<table type="2D" name="Speed Based RPM limiter" category="Limiters" storagetype="uint8" endian="little" sizex="6" userlevel="1">
 		<scaling units="RPM" expression="x*40" to_byte="x/40"  format="#" fineincrement="50" coarseincrement="100" />
 			<table type="X Axis" name="Vehicle Speed" storagetype="uint8" endian="little">
@@ -600,6 +616,10 @@ v0.0.1
 	<table name="RPM limiter - Soft" storageaddress="0xD032" />
 	
 	<table name="RPM limiter - Hard" storageaddress="0xD060" />
+	
+	<table name="RPM limiter - Hysteresis A" storageaddress="0xD074" />
+	
+	<table name="RPM limiter - Hysteresis B" storageaddress="0xD08F" />
 	
 	<table name="Speed Limiter" storageaddress="0xD094" />
 	
