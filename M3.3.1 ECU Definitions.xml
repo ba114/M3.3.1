@@ -188,7 +188,7 @@ v0.0.1
 			<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="little" logparam="P8">
 				<scaling units="RPM" expression="x*40" to_byte="x/40" format="#" fineincrement="50" coarseincrement="100" />
 			</table>
-		<description>This is a modifier to the fuel scalar based on Intake Air Temp. Increase the value to make richer, decrease to make leaner.</description>
+		<description>This is a modifier to the fuel scalar based on Intake Air Temp. Increase the value to make richer, decrease to make leaner. Should only be used for alphaN however some "tuners" use it to account for different sized injectors</description>
 	</table>
 	
 
