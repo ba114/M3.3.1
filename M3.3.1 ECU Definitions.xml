@@ -357,7 +357,7 @@ v0.0.1
 			<table type="X Axis" name="Vehicle Speed" storagetype="uint8" endian="little">
 				<scaling units="km/h" expression="x" to_byte="x" format="#" fineincrement="2" coarseincrement="10"/>
 			</table>
-		<description>Rev Limiter based on vehicle speed. Can be used for launch control by setting first column header to 0 km/h and setting desired limiter</description>
+		<description>Rev Limiter based on vehicle speed. Can be used for launch control by setting first column header to 0 km/h and setting desired limiter (GRAY LABEL ONLY)</description>
 	</table>
 
 	<table type="2D" name="RPM limiter (VSS Error)" category="Limiters" storagetype="uint8" endian="little" sizey="1" userlevel="1">
