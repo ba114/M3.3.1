@@ -1,7 +1,7 @@
 # M3.3.1
  Romraider defintions for Motronic 3.3.1 for E36 325i and M3
 
-I am primarily focussed on red label (623) software however have also added some silver label (965) maps.
+I am primarily focussed on red label (623) software however have also added some 506 M3 (965) maps.
 
 Contains automatic checksum calculations when saving (need to click save twice).
 
